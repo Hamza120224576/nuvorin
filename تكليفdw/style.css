@@ -1,0 +1,247 @@
+body {
+  font-family: 'Tajawal', sans-serif;
+  background-color: #fdfdfd;
+  color: #333;
+  margin: 0;
+  direction: rtl;
+}
+
+a, a:visited, a:hover, a:active {
+  text-decoration: none;
+}
+
+.main2 {
+  background-color: #222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding: 20px;
+  animation: fadeInUp 1s ease forwards;
+}
+
+.main2 img {
+  height: 50px;
+  width: auto;
+}
+
+.main2-title {
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: bold;
+  font-family: 'Tajawal', sans-serif;
+}
+
+.main3 {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  padding: 5px 0;
+  background-color: #fff;
+}
+
+.main3 a {
+  color: #333;
+  font-weight: 600;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.main3 a:hover {
+  background-color: #00bcd4;
+  color: white;
+}
+
+.main5 {
+  position: relative;
+  background-image: url("images/2.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+.main5::before {
+  content: "";
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.main6 {
+  position: relative;
+  z-index: 2;
+}
+
+.main6 h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  animation: fadeInUp 1s ease forwards;
+  animation-delay: 0.2s;
+}
+
+.main6 p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+  animation: fadeInUp 1s ease forwards;
+  animation-delay: 0.4s;
+}
+
+.main7 {
+  background-color: #00bcd4;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  animation: fadeInUp 1s ease forwards;
+  animation-delay: 0.6s;
+}
+
+.main7:hover {
+  background-color: #0097a7;
+}
+
+.main9 {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.main10, .main11, .main12, .main13 {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  flex: 1 1 220px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+  animation: zoomIn 0.8s ease forwards;
+  opacity: 0;
+}
+
+.main10 img, .main11 img, .main12 img, .main13 img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.main10 h3, .main11 h3, .main12 h3, .main13 h3 {
+  margin-bottom: 8px;
+  color: #00bcd4;
+}
+
+.main10 { animation-delay: 0.2s; }
+.main11 { animation-delay: 0.4s; }
+.main12 { animation-delay: 0.6s; }
+.main13 { animation-delay: 0.8s; }
+
+.main15 {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.main16, .main17 {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  flex: 1 1 300px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.main16 img, .main17 img {
+  width: 60px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.main19 input,
+.main19 textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: 'Tajawal', sans-serif;
+}
+
+.main19 textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.main20 {
+  background-color: #00bcd4;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.main20:hover {
+  background-color: #0097a7;
+}
+
+.main21 p {
+  margin: 5px 0;
+  font-weight: 600;
+}
+
+.main22 {
+  background-color: #222;
+  color: #eee;
+  padding: 20px 10px;
+  text-align: center;
+}
+
+.main23 a {
+  color: #00bcd4;
+  margin: 0 10px;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.main23 a:hover {
+  color: #0097a7;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
